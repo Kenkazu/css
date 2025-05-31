@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      height: 100vh;
+      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(10px);
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      animation: slideDown 1s ease-out;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.3);
+      border: 2px solid #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #fff;
+      color: #333;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌤️ Welcome to the Weather Dashboard</h1>
+    <p>
+      <a href="search.html" class="btn">🔍 Search Weather</a>
+      <a href="saved.html" class="btn">💾 Saved Cities</a>
+    </p>
+  </div>
+</body>
+</html>
