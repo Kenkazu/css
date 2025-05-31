@@ -1,0 +1,61 @@
+<!--saved-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Saved Cities</title>
+  <style>
+    /* General reset and background */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    /* Heading style */
+    h1 {
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+      margin-bottom: 20px;
+    }
+
+    /* Saved cities container */
+    #savedCities {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 20px 30px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    /* Each city item, assuming you render some */
+    .city {
+      background-color: #f0f8ff;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Saved Cities</h1>
+  <div id="savedCities">
+    <!-- Example content -->
+    <div class="city">Manila</div>
+    <div class="city">Cebu</div>
+    <div class="city">Davao</div>
+    <!-- These can be dynamically added using saved.js -->
+  </div>
+
+  <script src="js/saved.js"></script>
+</body>
+</html>
